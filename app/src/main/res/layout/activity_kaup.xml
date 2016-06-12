@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="#003399"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  성 명 : "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvName"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:ems="10"
+            android:inputType="text"
+
+            android:text="홍길동"
+            android:hint="이름을 넣으세요!"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몸무게 : "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvWeight"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etWeight"
+            android:text=""
+            android:hint="몸무게를  넣으세요!"
+            android:inputType="text"
+            android:textIsSelectable="false"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     키 : "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvHeight"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etHeight"
+            android:text=""
+            android:hint="키를 넣으세요!"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 상태는"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/resultCalc"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카오프계산"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#4374D9"
+        android:width="250dp"
+        android:id="@+id/btnCal"
+        android:onClick="Cal" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인으로 가기"
+        android:id="@+id/btnMain1"
+        android:background="#7abbcf"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

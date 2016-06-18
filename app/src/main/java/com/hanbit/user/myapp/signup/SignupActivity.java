@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.hanbit.user.myapp.R;
 import com.hanbit.user.myapp.member.MemberBean;
 import com.hanbit.user.myapp.member.MemberDAO;
+import com.hanbit.user.myapp.member.MemberService;
+import com.hanbit.user.myapp.member.MemberServiceImpl;
 
 public class SignupActivity extends Activity implements View.OnClickListener {
     EditText etID,etPwd, etName,etEmail;

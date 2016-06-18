@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.hanbit.user.myapp.Calc.CalcActivity;
+import com.hanbit.user.myapp.Group.GroupActivity;
 import com.hanbit.user.myapp.Login.Login2Activity;
 import com.hanbit.user.myapp.R;
 import com.hanbit.user.myapp.kaup.KaupActivity;
@@ -26,6 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ((Button) findViewById(R.id.btnLogin)).setOnClickListener(this);
         ((Button) findViewById(R.id.btnCalc)).setOnClickListener(this);
         ((Button) findViewById(R.id.btSignUp)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btGroup)).setOnClickListener(this);
    /*             button4.setOnClickListener(this);
                 button5.setOnClickListener(this);*/
     }
@@ -48,7 +50,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.btSignUp:;
                 startActivity(new Intent(this, SignupActivity.class));
-
+            case R.id.btGroup:;
+                startActivity(new Intent(this, GroupActivity.class));
                 break;
 
         }

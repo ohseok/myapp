@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp"
+
+        android:background="#ff0000"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가수그룹관리 DB"
+            android:textStyle="bold"
+            android:textColor="#f5f4f2"
+
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:id="@+id/tvHeight"
+            android:background="#0f0909" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 이름 : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etGName"
+            android:text=""
+            android:hint="이름을 입력하세요!"
+            android:ems="10"
+            android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10mm"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 인원 : "
+            android:textStyle="bold"
+            android:textSize="20dp"
+           />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etInwon"
+            android:text=""
+            android:inputType="text"
+            android:hint="인원을 입력세요!"
+            android:ems="10"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초기화"
+        android:textSize="30dp"
+        android:id="@+id/btGReset"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리스트"
+        android:textSize="30dp"
+        android:id="@+id/btList"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그룹수"
+            android:textSize="30dp"
+            android:id="@+id/btCount"/>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+        android:layout_gravity="left">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        android:textSize="30dp"
+        android:id="@+id/btGInput"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="조회"
+        android:textSize="30dp"
+        android:id="@+id/btGSearch"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="수정"
+            android:textSize="30dp"
+            android:id="@+id/btGUpdate"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:textSize="30dp"
+            android:id="@+id/btGDel"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="textStart"
+
+        android:id="@+id/etGResult"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#e4ef92"
+        />
+ </LinearLayout>

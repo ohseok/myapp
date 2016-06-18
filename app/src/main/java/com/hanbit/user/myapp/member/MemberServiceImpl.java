@@ -1,14 +1,17 @@
 package com.hanbit.user.myapp.member;
 
 import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
 
 /**
  * Created by user on 2016-06-11.
  */
 
 public class MemberServiceImpl extends Activity implements MemberService {
-   // MemberDAO dao=new MemberDAO(this.getApplication());
+
     MemberDAO dao=null;
+    //MemberDAO dao=new MemberDAO(this.getApplication());;
 
     @Override
     public String signup(MemberBean member) {

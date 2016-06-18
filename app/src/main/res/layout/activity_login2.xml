@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:text="회원로그인"
             android:textStyle="bold"
-            android:textSize="17dp"
+            android:textSize="20dp"
             android:id="@+id/tvHeight"/>
     </LinearLayout>
     <LinearLayout
@@ -26,7 +26,7 @@
         android:layout_marginLeft="10mm"
         android:layout_gravity="left">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" 아이디 : "
             android:textStyle="bold"
@@ -49,7 +49,7 @@
         android:layout_marginLeft="10mm"
         android:layout_gravity="left">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" 패스워드 : "
             android:textStyle="bold"
@@ -60,6 +60,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/etPwd2"
             android:text=""
+            android:inputType="textPassword"
             android:hint="패스워드를 넣으세요!"
             android:ems="10"
             />
@@ -72,7 +73,7 @@
         android:textSize="30dp"
         android:id="@+id/btSignUp2"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="회원가입 결과"
         android:textStyle="bold"

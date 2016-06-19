@@ -19,7 +19,9 @@
         <activity android:name=".kaup.KaupActivity" />
         <activity android:name=".Calc.CalcActivity" />
         <activity android:name=".Login.Login2Activity" />
-        <activity android:name=".Group.GroupActivity"></activity>
+        <activity android:name=".Group.GroupActivity" />
+        <activity android:name=".movie.MovieActivity" />
+        <activity android:name=".spinner.spinnerActivity"></activity>
     </application>
 
 </manifest>

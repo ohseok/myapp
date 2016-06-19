@@ -11,7 +11,9 @@ import com.hanbit.user.myapp.Group.GroupActivity;
 import com.hanbit.user.myapp.Login.Login2Activity;
 import com.hanbit.user.myapp.R;
 import com.hanbit.user.myapp.kaup.KaupActivity;
+import com.hanbit.user.myapp.movie.MovieActivity;
 import com.hanbit.user.myapp.signup.SignupActivity;
+import com.hanbit.user.myapp.spinner.spinnerActivity;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -28,6 +30,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ((Button) findViewById(R.id.btnCalc)).setOnClickListener(this);
         ((Button) findViewById(R.id.btSignUp)).setOnClickListener(this);
         ((Button) findViewById(R.id.btGroup)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btMov)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btSpinner)).setOnClickListener(this);
    /*             button4.setOnClickListener(this);
                 button5.setOnClickListener(this);*/
     }
@@ -45,13 +49,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btnLogin:;
                 startActivity(new Intent(this, Login2Activity.class));
-
                 break;
-
-            case R.id.btSignUp:;
+            case R.id.btSignUp:
                 startActivity(new Intent(this, SignupActivity.class));
-            case R.id.btGroup:;
+                break;
+            case R.id.btGroup:
                 startActivity(new Intent(this, GroupActivity.class));
+                break;
+            case R.id.btMov:
+                startActivity(new Intent(this, MovieActivity.class));
+                break;
+            case R.id.btSpinner:
+                startActivity(new Intent(this, spinnerActivity.class));
                 break;
 
         }
